@@ -1,0 +1,10 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.js"></script>
+
+<%= form_tag(things_path, method: :get) do %>
+  <%= label_tag 'thing_name', 'Search for a Thing' %>
+  <%= text_field_tag :term, nil, id: 'thing-name' %>
+
+<% end %>
+<script src="/assets/autocomplete.js"></script>
